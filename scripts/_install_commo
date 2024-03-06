@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cat << 'EOF' > /usr/local/bin/commo
+#!/usr/bin/env bash
+bash <(wget -qO- https://raw.githubusercontent.com/ennetech/commo/main/scripts/$1)
+EOF
+
+chmod +x /usr/local/bin/commo
+cat /usr/local/bin/commo
