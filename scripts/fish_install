@@ -5,6 +5,8 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 fish /tmp/install_omf --noninteractive && rm /tmp/install_omf
 # https://stackoverflow.com/questions/866989/fish-interactive-shell-full-path
 echo "set -U fish_prompt_pwd_dir_length 0" | fish
+# https://github.com/oh-my-fish/theme-agnoster
+echo "set -g fish_vcs_branch_name_length 50" | fish
 echo "omf install agnoster" | fish
 
 echo "set -g fish_greeting" >> ~/.config/fish/config.fish
